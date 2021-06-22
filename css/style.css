@@ -1,0 +1,42 @@
+.menu-container {
+    background-color: #29b1dd;
+    height: 62px;
+}
+
+.icons-container {
+    background-color: #ddd;
+}
+
+.icon-card {
+    flex-basis: calc(100% / 5);
+    max-width: calc(100% / 5);
+}
+
+.icon-card-inner {
+    height: 120px;
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.icon-card-inner .icon {
+    width: 100%;
+    font-size: 32px;
+}
+
+.icon-card-inner .name {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.icon.animal {
+    color: #0000ff;
+}
+
+.icon.vegetable {
+    color: #ffa500;
+}
+
+.icon.user {
+    color: #800080;
+}
