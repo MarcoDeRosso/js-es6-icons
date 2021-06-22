@@ -119,7 +119,6 @@ function filterIcons(choice, originalList) {
 
 }
 
-listIconsToHTML("all");
 
 function listIconsToHTML(value) {
     const iconsFiltered = filterIcons(value, icons);
@@ -129,18 +128,19 @@ function listIconsToHTML(value) {
         const { name, prefix, family, type } = icon;
         containerHTML.innerHTML += `
         <div class="icon-card col my-3">
-            <div class="icon-card-inner p-3 text-center d-flex flex-wrap align-items-center align-content-center">
-                <div class="icon ${type}">
-                     <i class="${family} ${prefix}${name}"></i>
-                </div>
-                <div class="name">
-                     ${name}
-                </div>
-            </div>
+        <div class="icon-card-inner p-3 text-center d-flex flex-wrap align-items-center align-content-center">
+        <div class="icon ${type}">
+        <i class="${family} ${prefix}${name}"></i>
+        </div>
+        <div class="name">
+        ${name}
+        </div>
+        </div>
         </div>
         `
     })
 }
+listIconsToHTML("all");
 
 const selectElement = document.querySelector(".type-select");
 
