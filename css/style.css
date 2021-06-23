@@ -10,6 +10,7 @@
 .menu-container {
     background-color: #29b1dd;
     height: 62px;
+    position: relative;
 }
 
 .menu-container .menu-inner {
